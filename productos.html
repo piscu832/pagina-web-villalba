@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos | Villalba Hnos. Implantes</title>
+    
+    <!-- Meta Tags SEO -->
+    <meta name="description" content="Explore nuestro catálogo de implantes para osteosíntesis y artroscopía. Tecnología médica de alta gama certificada por ANMAT.">
+    
+    <!-- Fonts: Outfit & Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1c3f87',
+                        secondary: '#3b82f6',
+                        accent: '#10b981',
+                        dark: '#0f172a',
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        raleway: ['Raleway', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Iconos Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#f8fafc] text-dark">
+
+    <!-- Navigation -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between bg-white/70 backdrop-blur-xl border border-white/20 shadow-lg rounded-2xl px-6 h-16">
+            
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-4 cursor-pointer group">
+                <img src="LOGO AZUL.png" alt="Villalba Logo" class="h-12 w-auto transition-transform group-hover:scale-105">
+                <div class="hidden sm:flex flex-col leading-tight">
+                    <span class="text-lg font-bold text-primary font-raleway tracking-tight">Villalba Hnos.</span>
+                    <span class="text-[10px] font-extrabold text-secondary font-raleway uppercase tracking-[0.2em]">Implantes</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-1">
+                <a href="index.html" class="nav-link px-4 py-2 text-sm font-semibold text-slate-500 hover:text-primary transition-colors rounded-lg">Inicio</a>
+                <a href="nosotros.html" class="nav-link px-4 py-2 text-sm font-semibold text-slate-500 hover:text-primary transition-colors rounded-lg">Empresa</a>
+                <a href="pacientes.html" class="nav-link px-4 py-2 text-sm font-semibold text-slate-500 hover:text-primary transition-colors rounded-lg">Pacientes</a>
+                <a href="productos.html" class="nav-link px-4 py-2 text-sm font-semibold text-slate-500 hover:text-primary transition-colors rounded-lg">Productos</a>
+                <div class="w-px h-6 bg-slate-200 mx-2"></div>
+                <a href="contacto.html" class="bg-primary text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-secondary hover:shadow-xl hover:shadow-secondary/20 transition-all active:scale-95">
+                    Contacto
+                </a>
+            </nav>
+
+            <!-- Mobile Toggle -->
+            <button class="md:hidden text-primary p-2" onclick="toggleMenu()">
+                <i data-lucide="menu" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-24 left-6 right-6 bg-white/95 backdrop-blur-2xl rounded-3xl shadow-2xl border border-slate-100 p-8 flex-col gap-6 md:hidden animate-fade-up">
+            <a href="index.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Inicio</a>
+            <a href="nosotros.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Empresa</a>
+            <a href="pacientes.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Pacientes</a>
+            <a href="productos.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Productos</a>
+            <a href="contacto.html" class="bg-primary text-white py-4 rounded-2xl font-bold text-center mt-4 shadow-lg">Hablar con un Asesor</a>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20">
+        <!-- Page Title & Filters -->
+        <section class="max-w-7xl mx-auto px-6 mb-20">
+            <div class="flex flex-col lg:flex-row justify-between items-end gap-12 reveal">
+                <div class="max-w-2xl">
+                    <span class="text-secondary font-black text-sm uppercase tracking-[0.3em] mb-4 block">Catálogo Técnico</span>
+                    <h1 class="text-5xl font-black text-primary tracking-tighter mb-6">Soluciones para Especialistas.</h1>
+                    <p class="text-lg text-slate-500 font-medium">Sistemas optimizados para traumatología, reconstrucción ósea y medicina deportiva.</p>
+                </div>
+                <div class="flex bg-slate-100 p-2 rounded-2xl gap-1">
+                    <button onclick="filterProducts('todos')" class="filter-btn active px-8 py-3 rounded-xl text-sm font-bold transition-all bg-white shadow-sm text-primary" data-category="todos">Ver Todo</button>
+                    <button onclick="filterProducts('osteo')" class="filter-btn px-8 py-3 rounded-xl text-sm font-bold transition-all text-slate-500 hover:text-primary" data-category="osteo">Osteosíntesis</button>
+                    <button onclick="filterProducts('artro')" class="filter-btn px-8 py-3 rounded-xl text-sm font-bold transition-all text-slate-500 hover:text-primary" data-category="artro">Artroscopía</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10" id="product-grid">
+                <!-- Producto 1 -->
+                <div class="product-card group reveal" data-category="osteo">
+                    <div class="relative h-[450px] rounded-[48px] overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500">
+                        <img src="locking_plates.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt="Placas de Bloqueo Titanio">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+                        <div class="absolute top-6 left-6 bg-white/20 backdrop-blur-md text-white text-[10px] font-black px-4 py-2 rounded-xl tracking-widest border border-white/20 uppercase">Osteosíntesis</div>
+                        <div class="absolute bottom-10 left-10 right-10">
+                            <h3 class="text-3xl font-black text-white mb-4 leading-tight">Sistemas de Bloqueo Anatómico</h3>
+                            <p class="text-white/70 text-sm mb-6 line-clamp-2">Placas de titanio de bajo perfil diseñadas para la estabilización de fracturas diafisarias y metafisarias.</p>
+                            <a href="contacto.html" class="bg-white text-primary w-full py-4 rounded-2xl font-bold hover:bg-secondary hover:text-white transition-all flex items-center justify-center">Consultar Especificaciones</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-card group reveal" data-category="artro" style="transition-delay: 0.1s;">
+                    <div class="relative h-[450px] rounded-[48px] overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500">
+                        <img src="suture_anchors.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt="Anclajes Bio-absorbibles">
+                        <div class="absolute inset-0 bg-gradient-to-t from-secondary/90 via-secondary/20 to-transparent"></div>
+                        <div class="absolute top-6 left-6 bg-white/20 backdrop-blur-md text-white text-[10px] font-black px-4 py-2 rounded-xl tracking-widest border border-white/20 uppercase">Artroscopía</div>
+                        <div class="absolute bottom-10 left-10 right-10">
+                            <h3 class="text-3xl font-black text-white mb-4 leading-tight">Anclajes de Alta Resistencia</h3>
+                            <p class="text-white/70 text-sm mb-6 line-clamp-2">Soluciones bio-absorbibles y PEEK para reconstrucción de manguito rotador e inestabilidad de hombro.</p>
+                            <a href="contacto.html" class="bg-white text-primary w-full py-4 rounded-2xl font-bold hover:bg-primary hover:text-white transition-all flex items-center justify-center">Consultar Especificaciones</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card group reveal" data-category="osteo" style="transition-delay: 0.2s;">
+                    <div class="relative h-[450px] rounded-[48px] overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500">
+                        <img src="intramedullary_nails.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt="Clavos Intramedulares">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+                        <div class="absolute top-6 left-6 bg-white/20 backdrop-blur-md text-white text-[10px] font-black px-4 py-2 rounded-xl tracking-widest border border-white/20 uppercase">Osteosíntesis</div>
+                        <div class="absolute bottom-10 left-10 right-10">
+                            <h3 class="text-3xl font-black text-white mb-4 leading-tight">Clavos Intramedulares Expert</h3>
+                            <p class="text-white/70 text-sm mb-6 line-clamp-2">Diseño anatómico canulado para fémur, tibia y húmero, facilitando la consolidación ósea temprana.</p>
+                            <a href="contacto.html" class="bg-white text-primary w-full py-4 rounded-2xl font-bold hover:bg-secondary hover:text-white transition-all flex items-center justify-center">Consultar Especificaciones</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white pt-32 pb-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24">
+                <div class="lg:col-span-2">
+                    <a href="index.html" class="flex items-center gap-4 mb-10 cursor-pointer">
+                        <img src="LOGO AZUL.png" alt="Villalba Logo" class="h-14 w-auto brightness-0 invert">
+                        <div class="flex flex-col leading-tight">
+                            <span class="text-xl font-bold text-white font-raleway tracking-tight">Villalba Hnos.</span>
+                            <span class="text-[11px] font-extrabold text-secondary font-raleway uppercase tracking-[0.2em]">Implantes</span>
+                        </div>
+                    </a>
+                    <p class="text-slate-400 max-w-sm leading-relaxed font-medium">
+                        Líderes en tecnología médica para traumatología. Comprometidos con la excelencia técnica y la recuperación del paciente desde hace más de dos décadas.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="text-secondary font-black text-xs uppercase tracking-[0.3em] mb-10">Navegación</h5>
+                    <ul class="space-y-6">
+                        <li><a href="index.html" class="text-slate-300 font-bold hover:text-white transition-colors">Inicio</a></li>
+                        <li><a href="nosotros.html" class="text-slate-300 font-bold hover:text-white transition-colors">Empresa</a></li>
+                        <li><a href="pacientes.html" class="text-slate-300 font-bold hover:text-white transition-colors">Pacientes</a></li>
+                        <li><a href="productos.html" class="text-slate-300 font-bold hover:text-white transition-colors">Catálogo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-secondary font-black text-xs uppercase tracking-[0.3em] mb-10">Legal</h5>
+                    <ul class="space-y-6">
+                        <li><a href="#" class="text-slate-300 font-bold hover:text-white transition-colors">Certificación ANMAT</a></li>
+                        <li><a href="#" class="text-slate-300 font-bold hover:text-white transition-colors">Términos de Uso</a></li>
+                        <li><a href="#" class="text-slate-300 font-bold hover:text-white transition-colors">Políticas de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/5 pt-16 flex flex-col md:flex-row justify-between items-center gap-10">
+                <p class="text-slate-500 text-[10px] font-black uppercase tracking-[0.3em]">© 2024 Villalba Medical S.A. Todos los derechos reservados.</p>
+                <div class="flex items-center gap-4 bg-white/5 px-6 py-3 rounded-2xl border border-white/10">
+                    <span class="flex h-2 w-2 rounded-full bg-accent"></span>
+                    <span class="text-[10px] font-black uppercase tracking-widest text-slate-400">Soporte Técnico Activo</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

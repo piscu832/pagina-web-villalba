@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Pacientes y Familias | Villalba Hnos. Implantes</title>
+    
+    <!-- Meta Tags SEO -->
+    <meta name="description" content="Información esencial para pacientes y familiares sobre cirugía de implantes, trazabilidad y asistencia técnica. Resolvemos sus dudas.">
+    
+    <!-- Fonts: Outfit & Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1c3f87',
+                        secondary: '#3b82f6',
+                        accent: '#10b981',
+                        dark: '#0f172a',
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        raleway: ['Raleway', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Iconos Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#f8fafc] text-dark">
+
+    <!-- Navigation -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between bg-white/70 backdrop-blur-xl border border-white/20 shadow-lg rounded-2xl px-6 h-16">
+            
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-4 cursor-pointer group">
+                <img src="LOGO AZUL.png" alt="Villalba Logo" class="h-12 w-auto transition-transform group-hover:scale-105">
+                <div class="hidden sm:flex flex-col leading-tight">
+                    <span class="text-lg font-bold text-primary font-raleway tracking-tight">Villalba Hnos.</span>
+                    <span class="text-[10px] font-extrabold text-secondary font-raleway uppercase tracking-[0.2em]">Implantes</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-1">
+                <a href="index.html" class="nav-link px-4 py-2 text-sm font-semibold text-slate-500 hover:text-primary transition-colors rounded-lg">Inicio</a>
+                <a href="nosotros.html" class="nav-link px-4 py-2 text-sm font-semibold text-slate-500 hover:text-primary transition-colors rounded-lg">Empresa</a>
+                <a href="pacientes.html" class="nav-link px-4 py-2 text-sm font-semibold text-slate-500 hover:text-primary transition-colors rounded-lg">Pacientes</a>
+                <a href="productos.html" class="nav-link px-4 py-2 text-sm font-semibold text-slate-500 hover:text-primary transition-colors rounded-lg">Productos</a>
+                <div class="w-px h-6 bg-slate-200 mx-2"></div>
+                <a href="contacto.html" class="bg-primary text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-secondary hover:shadow-xl hover:shadow-secondary/20 transition-all active:scale-95">
+                    Contacto
+                </a>
+            </nav>
+
+            <!-- Mobile Toggle -->
+            <button class="md:hidden text-primary p-2" onclick="toggleMenu()">
+                <i data-lucide="menu" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-24 left-6 right-6 bg-white/95 backdrop-blur-2xl rounded-3xl shadow-2xl border border-slate-100 p-8 flex-col gap-6 md:hidden animate-fade-up">
+            <a href="index.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Inicio</a>
+            <a href="nosotros.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Empresa</a>
+            <a href="pacientes.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Pacientes</a>
+            <a href="productos.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Productos</a>
+            <a href="contacto.html" class="bg-primary text-white py-4 rounded-2xl font-bold text-center mt-4 shadow-lg">Hablar con un Asesor</a>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20">
+        <!-- Page Title -->
+        <section class="max-w-7xl mx-auto px-6 mb-20">
+            <span class="text-secondary font-black text-sm uppercase tracking-[0.3em] mb-4 block reveal">Compromiso Humano</span>
+            <h1 class="text-5xl md:text-7xl font-black text-primary tracking-tighter mb-10 reveal">Tranquilidad para usted <br>y su familia.</h1>
+            <p class="text-xl text-slate-600 max-w-3xl reveal">Entendemos que un procedimiento quirúrgico es un momento importante. Nuestra misión es brindarle la seguridad de que el material utilizado es de la más alta calidad mundial.</p>
+        </section>
+
+        <!-- Information Cards -->
+        <section class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 mb-32">
+            <div class="bg-white p-12 rounded-[48px] shadow-xl border border-slate-100 reveal">
+                <div class="w-16 h-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-10">
+                    <i data-lucide="shield-check" class="w-8 h-8"></i>
+                </div>
+                <h4 class="text-2xl font-black text-primary mb-6">Seguridad Garantizada</h4>
+                <p class="text-slate-500 leading-relaxed font-medium">Todos nuestros implantes cuentan con certificación de trazabilidad ANMAT. Usted puede conocer el origen exacto de cada pieza utilizada.</p>
+            </div>
+            
+            <div class="bg-white p-12 rounded-[48px] shadow-xl border border-slate-100 reveal" style="transition-delay: 0.1s;">
+                <div class="w-16 h-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-10">
+                    <i data-lucide="user-check" class="w-8 h-8"></i>
+                </div>
+                <h4 class="text-2xl font-black text-primary mb-6">Asistencia Especializada</h4>
+                <p class="text-slate-500 leading-relaxed font-medium">Un técnico instrumentista de Villalba asiste al cirujano durante la operación para asegurar el uso óptimo del instrumental.</p>
+            </div>
+            
+            <div class="bg-white p-12 rounded-[48px] shadow-xl border border-slate-100 reveal" style="transition-delay: 0.2s;">
+                <div class="w-16 h-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-10">
+                    <i data-lucide="clock" class="w-8 h-8"></i>
+                </div>
+                <h4 class="text-2xl font-black text-primary mb-6">Respuesta 24/7</h4>
+                <p class="text-slate-500 leading-relaxed font-medium">Contamos con stock permanente y logística inmediata para cirugías de urgencia en cualquier momento del día.</p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="max-w-4xl mx-auto px-6 reveal">
+            <h3 class="text-3xl font-black text-center text-primary mb-16 tracking-tight">Preguntas Frecuentes</h3>
+            <div class="space-y-6">
+                <div class="faq-item bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-8 text-left group">
+                        <span class="text-xl font-bold text-slate-700 group-hover:text-primary transition-colors">¿Qué documentos necesito para mi Obra Social?</span>
+                        <i data-lucide="chevron-down" class="faq-icon w-6 h-6 text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-8 pb-8 text-slate-500 font-medium">
+                        <p>Generalmente, su obra social o prepaga le solicitará: 1) Orden médica original, 2) Resumen de historia clínica, 3) Estudios (RX, Resonancia), y 4) El presupuesto detallado que nosotros le proveeremos.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-8 text-left group">
+                        <span class="text-xl font-bold text-slate-700 group-hover:text-primary transition-colors">¿Cómo obtengo el certificado de implante?</span>
+                        <i data-lucide="chevron-down" class="faq-icon w-6 h-6 text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-8 pb-8 text-slate-500 font-medium">
+                        <p>Tras la cirugía, nuestro técnico entrega los stickers de trazabilidad al personal de la clínica. Usted puede solicitarnos una copia digital o física del certificado oficial de Villalba Hnos. para sus registros personales.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-8 text-left group">
+                        <span class="text-xl font-bold text-slate-700 group-hover:text-primary transition-colors">¿De qué material están hechos los implantes?</span>
+                        <i data-lucide="chevron-down" class="faq-icon w-6 h-6 text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content px-8 pb-8 text-slate-500 font-medium">
+                        <p>Dependiendo del tipo de cirugía, utilizamos Titanio grado médico (Ti6Al4V), Acero Inoxidable 316L o polímeros de alta resistencia como PEEK. Todos son bio-compatibles y de grado quirúrgico internacional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="max-w-7xl mx-auto px-6 mt-32">
+            <div class="bg-primary rounded-[60px] p-12 md:p-20 text-white flex flex-col md:flex-row items-center justify-between gap-12 reveal">
+                <div class="max-w-xl">
+                    <h3 class="text-4xl font-black mb-6 leading-tight">¿Necesita asesoramiento administrativo o técnico?</h3>
+                    <p class="text-slate-300 text-lg">Nuestro equipo de atención al paciente está listo para guiarlo en cada paso del proceso.</p>
+                </div>
+                <a href="contacto.html" class="bg-white text-primary px-10 py-5 rounded-2xl font-black hover:bg-secondary hover:text-white transition-all shadow-2xl">
+                    HABLAR CON UN ASESOR
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white pt-32 pb-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24">
+                <div class="lg:col-span-2">
+                    <a href="index.html" class="flex items-center gap-4 mb-10 cursor-pointer">
+                        <img src="LOGO AZUL.png" alt="Villalba Logo" class="h-14 w-auto brightness-0 invert">
+                        <div class="flex flex-col leading-tight">
+                            <span class="text-xl font-bold text-white font-raleway tracking-tight">Villalba Hnos.</span>
+                            <span class="text-[11px] font-extrabold text-secondary font-raleway uppercase tracking-[0.2em]">Implantes</span>
+                        </div>
+                    </a>
+                    <p class="text-slate-400 max-w-sm leading-relaxed font-medium">
+                        Líderes en tecnología médica para traumatología. Comprometidos con la excelencia técnica y la recuperación del paciente desde hace más de dos décadas.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="text-secondary font-black text-xs uppercase tracking-[0.3em] mb-10">Navegación</h5>
+                    <ul class="space-y-6">
+                        <li><a href="index.html" class="text-slate-300 font-bold hover:text-white transition-colors">Inicio</a></li>
+                        <li><a href="nosotros.html" class="text-slate-300 font-bold hover:text-white transition-colors">Empresa</a></li>
+                        <li><a href="pacientes.html" class="text-slate-300 font-bold hover:text-white transition-colors">Pacientes</a></li>
+                        <li><a href="productos.html" class="text-slate-300 font-bold hover:text-white transition-colors">Catálogo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-secondary font-black text-xs uppercase tracking-[0.3em] mb-10">Legal</h5>
+                    <ul class="space-y-6">
+                        <li><a href="#" class="text-slate-300 font-bold hover:text-white transition-colors">Certificación ANMAT</a></li>
+                        <li><a href="#" class="text-slate-300 font-bold hover:text-white transition-colors">Términos de Uso</a></li>
+                        <li><a href="#" class="text-slate-300 font-bold hover:text-white transition-colors">Políticas de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/5 pt-16 flex flex-col md:flex-row justify-between items-center gap-10">
+                <p class="text-slate-500 text-[10px] font-black uppercase tracking-[0.3em]">© 2024 Villalba Medical S.A. Todos los derechos reservados.</p>
+                <div class="flex items-center gap-4 bg-white/5 px-6 py-3 rounded-2xl border border-white/10">
+                    <span class="flex h-2 w-2 rounded-full bg-accent"></span>
+                    <span class="text-[10px] font-black uppercase tracking-widest text-slate-400">Soporte Técnico Activo</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

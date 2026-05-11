@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villalba Hnos. Implantes | Salud & Tecnología de Vanguardia</title>
+    
+    <!-- Meta Tags SEO -->
+    <meta name="description" content="Especialistas en soluciones de Osteosíntesis y Artroscopía. Tecnología médica de alta precisión certificada por ANMAT para el cuidado de su familia.">
+    <meta name="keywords" content="implantes médicos, osteosíntesis, artroscopía, traumatología, Villalba, salud, tecnología médica">
+    
+    <!-- Fonts: Outfit & Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1c3f87',
+                        secondary: '#3b82f6',
+                        accent: '#10b981',
+                        dark: '#0f172a',
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        raleway: ['Raleway', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-up': 'fadeUp 0.8s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Iconos Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#f8fafc] text-dark selection:bg-secondary/20 selection:text-primary">
+
+    <!-- Navigation -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between bg-white/70 backdrop-blur-xl border border-white/20 shadow-lg rounded-2xl px-6 h-16">
+            
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-4 cursor-pointer group">
+                <img src="LOGO AZUL.png" alt="Villalba Logo" class="h-12 w-auto transition-transform group-hover:scale-105">
+                <div class="hidden sm:flex flex-col leading-tight">
+                    <span class="text-lg font-bold text-primary font-raleway tracking-tight">Villalba Hnos.</span>
+                    <span class="text-[10px] font-extrabold text-secondary font-raleway uppercase tracking-[0.2em]">Implantes</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-1">
+                <a href="index.html" class="nav-link px-4 py-2 text-sm font-semibold text-slate-500 hover:text-primary transition-colors rounded-lg">Inicio</a>
+                <a href="nosotros.html" class="nav-link px-4 py-2 text-sm font-semibold text-slate-500 hover:text-primary transition-colors rounded-lg">Empresa</a>
+                <a href="pacientes.html" class="nav-link px-4 py-2 text-sm font-semibold text-slate-500 hover:text-primary transition-colors rounded-lg">Pacientes</a>
+                <a href="productos.html" class="nav-link px-4 py-2 text-sm font-semibold text-slate-500 hover:text-primary transition-colors rounded-lg">Productos</a>
+                <div class="w-px h-6 bg-slate-200 mx-2"></div>
+                <a href="contacto.html" class="bg-primary text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-secondary hover:shadow-xl hover:shadow-secondary/20 transition-all active:scale-95">
+                    Contacto
+                </a>
+            </nav>
+
+            <!-- Mobile Toggle -->
+            <button class="md:hidden text-primary p-2" onclick="toggleMenu()">
+                <i data-lucide="menu" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-24 left-6 right-6 bg-white/95 backdrop-blur-2xl rounded-3xl shadow-2xl border border-slate-100 p-8 flex-col gap-6 md:hidden animate-fade-up">
+            <a href="index.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Inicio</a>
+            <a href="nosotros.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Empresa</a>
+            <a href="pacientes.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Pacientes</a>
+            <a href="productos.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Productos</a>
+            <a href="contacto.html" class="bg-primary text-white py-4 rounded-2xl font-bold text-center mt-4 shadow-lg">Hablar con un Asesor</a>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+            <!-- Background Elements -->
+            <div class="absolute inset-0 z-0">
+                <div class="absolute top-0 right-0 w-[50%] h-[100%] bg-gradient-to-l from-secondary/10 to-transparent"></div>
+                <div class="absolute -top-24 -left-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-0 right-0 w-[800px] h-[800px] bg-secondary/5 rounded-full blur-[120px] translate-x-1/2 translate-y-1/2"></div>
+            </div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="reveal">
+                    <div class="inline-flex items-center gap-2 bg-white border border-slate-200 px-4 py-1.5 rounded-full shadow-sm mb-8">
+                        <span class="flex h-2 w-2 rounded-full bg-accent animate-pulse"></span>
+                        <span class="text-[11px] font-bold text-slate-600 uppercase tracking-widest">Certificación ANMAT Garantizada</span>
+                    </div>
+                    <h1 class="text-6xl md:text-8xl font-black text-primary leading-[0.95] mb-8 tracking-tighter">
+                        Precisión <br> <span class="gradient-text">Quirúrgica</span> <br>Humana.
+                    </h1>
+                    <p class="text-xl text-slate-600 mb-10 leading-relaxed font-medium max-w-xl">
+                        Más de 20 años liderando la distribución de implantes de alta tecnología en Argentina. Unimos la excelencia técnica con el compromiso incondicional por la recuperación del paciente.
+                    </p>
+                    <div class="flex flex-wrap gap-5">
+                        <a href="productos.html" class="bg-primary text-white px-8 py-4 rounded-2xl font-bold hover:shadow-2xl hover:shadow-primary/30 hover:-translate-y-1 transition-all flex items-center gap-3 group">
+                            Ver Catálogo Técnico
+                            <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="pacientes.html" class="bg-white border-2 border-slate-200 text-slate-700 px-8 py-4 rounded-2xl font-bold hover:border-primary hover:text-primary transition-all shadow-sm">
+                            Información para Familias
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="relative hidden lg:block reveal-right">
+                    <div class="relative z-10 rounded-[60px] overflow-hidden shadow-2xl border-[12px] border-white glass-shine">
+                        <img id="hero-img" src="hero_medical_tech.png" class="w-full h-full object-cover aspect-[4/5] scale-110 hover:scale-100 transition-transform duration-1000" alt="Tecnología Médica Villalba">
+                    </div>
+                    <!-- Floating Cards -->
+                    <div class="absolute -right-8 top-1/4 bg-white/80 backdrop-blur-lg p-6 rounded-3xl shadow-xl border border-white/50 animate-float z-20">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-accent/20 text-accent rounded-2xl flex items-center justify-center">
+                                <i data-lucide="activity"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Stock Permanente</p>
+                                <p class="text-lg font-black text-primary leading-tight">24/7 Disponible</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-12">
+                    <div class="text-center reveal">
+                        <div class="text-5xl font-black text-primary mb-2">20<span class="text-secondary">+</span></div>
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Años de Trayectoria</p>
+                    </div>
+                    <div class="text-center reveal" style="transition-delay: 0.1s;">
+                        <div class="text-5xl font-black text-primary mb-2">10k<span class="text-secondary">+</span></div>
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Cirugías Exitosas</p>
+                    </div>
+                    <div class="text-center reveal" style="transition-delay: 0.2s;">
+                        <div class="text-5xl font-black text-primary mb-2">100<span class="text-secondary">%</span></div>
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Trazabilidad ANMAT</p>
+                    </div>
+                    <div class="text-center reveal" style="transition-delay: 0.3s;">
+                        <div class="text-5xl font-black text-primary mb-2">24<span class="text-secondary">hs</span></div>
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Logística de Urgencia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Info Section -->
+        <section class="py-32 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+                    <div class="reveal">
+                        <h2 class="text-4xl font-black text-primary mb-8 tracking-tighter">Comprometidos con la <span class="text-secondary">Excelencia Médica</span>.</h2>
+                        <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                            Desde nuestra fundación, en Villalba Hnos. hemos trabajado codo a codo con los mejores profesionales del país, brindando no solo materiales, sino un servicio técnico integral en cada quirófano.
+                        </p>
+                        <a href="nosotros.html" class="inline-flex items-center gap-2 text-primary font-bold hover:text-secondary transition-colors">
+                            Conocer nuestra historia <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 reveal-right">
+                        <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                            <i data-lucide="award" class="text-secondary mb-4"></i>
+                            <h4 class="font-bold text-primary mb-2">Certificación</h4>
+                            <p class="text-sm text-slate-500">Garantía ANMAT en cada producto.</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                            <i data-lucide="truck" class="text-secondary mb-4"></i>
+                            <h4 class="font-bold text-primary mb-2">Logística</h4>
+                            <p class="text-sm text-slate-500">Entregas inmediatas 24/7.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white pt-32 pb-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24">
+                <div class="lg:col-span-2">
+                    <a href="index.html" class="flex items-center gap-4 mb-10 cursor-pointer">
+                        <img src="LOGO AZUL.png" alt="Villalba Logo" class="h-14 w-auto brightness-0 invert">
+                        <div class="flex flex-col leading-tight">
+                            <span class="text-xl font-bold text-white font-raleway tracking-tight">Villalba Hnos.</span>
+                            <span class="text-[11px] font-extrabold text-secondary font-raleway uppercase tracking-[0.2em]">Implantes</span>
+                        </div>
+                    </a>
+                    <p class="text-slate-400 max-w-sm leading-relaxed font-medium">
+                        Líderes en tecnología médica para traumatología. Comprometidos con la excelencia técnica y la recuperación del paciente desde hace más de dos décadas.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="text-secondary font-black text-xs uppercase tracking-[0.3em] mb-10">Navegación</h5>
+                    <ul class="space-y-6">
+                        <li><a href="index.html" class="text-slate-300 font-bold hover:text-white transition-colors">Inicio</a></li>
+                        <li><a href="nosotros.html" class="text-slate-300 font-bold hover:text-white transition-colors">Empresa</a></li>
+                        <li><a href="pacientes.html" class="text-slate-300 font-bold hover:text-white transition-colors">Pacientes</a></li>
+                        <li><a href="productos.html" class="text-slate-300 font-bold hover:text-white transition-colors">Catálogo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-secondary font-black text-xs uppercase tracking-[0.3em] mb-10">Legal</h5>
+                    <ul class="space-y-6">
+                        <li><a href="#" class="text-slate-300 font-bold hover:text-white transition-colors">Certificación ANMAT</a></li>
+                        <li><a href="#" class="text-slate-300 font-bold hover:text-white transition-colors">Términos de Uso</a></li>
+                        <li><a href="#" class="text-slate-300 font-bold hover:text-white transition-colors">Políticas de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/5 pt-16 flex flex-col md:flex-row justify-between items-center gap-10">
+                <p class="text-slate-500 text-[10px] font-black uppercase tracking-[0.3em]">© 2024 Villalba Medical S.A. Todos los derechos reservados.</p>
+                <div class="flex items-center gap-4 bg-white/5 px-6 py-3 rounded-2xl border border-white/10">
+                    <span class="flex h-2 w-2 rounded-full bg-accent"></span>
+                    <span class="text-[10px] font-black uppercase tracking-widest text-slate-400">Soporte Técnico Activo</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

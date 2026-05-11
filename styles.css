@@ -1,0 +1,170 @@
+/* Design System & Premium Aesthetics */
+:root {
+    --primary: #1c3f87;
+    --primary-dark: #0f172a;
+    --secondary: #3b82f6;
+    --accent: #10b981;
+    --white: #ffffff;
+    --bg-light: #f8fafc;
+    --transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Custom Gradients */
+.gradient-text {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.glass-shine {
+    position: relative;
+    overflow: hidden;
+}
+
+.glass-shine::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.1) 45%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.1) 55%,
+        transparent 100%
+    );
+    transform: rotate(45deg);
+    animation: shine 6s infinite;
+    pointer-events: none;
+}
+
+@keyframes shine {
+    0% { transform: translateX(-100%) rotate(45deg); }
+    20%, 100% { transform: translateX(100%) rotate(45deg); }
+}
+
+/* Animations on Scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: var(--transition);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: var(--transition);
+}
+
+.reveal-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Nav Links */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: var(--transition);
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 20px;
+}
+
+.nav-link.active-section {
+    color: var(--primary);
+}
+
+.nav-link.active-section::after {
+    width: 100%;
+}
+
+/* Header Scrolled State */
+header.scrolled .max-w-7xl {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1);
+    transform: translateY(10px);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* FAQ Accordion */
+.faq-item .faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faq-item.open .faq-content {
+    max-height: 300px;
+}
+
+.faq-item.open .faq-icon {
+    transform: rotate(180deg);
+    color: var(--secondary);
+}
+
+/* Product Cards */
+.product-card {
+    transition: var(--transition);
+}
+
+.product-card.hidden {
+    display: none;
+}
+
+/* Form Styles */
+input::placeholder, textarea::placeholder {
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
