@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novedades | Villalba Hnos. Implantes</title>
+    
+    <!-- Meta Tags SEO -->
+    <meta name="description" content="Manténgase al día con las últimas novedades, eventos y publicaciones de Villalba Hnos. Implantes. Innovación constante en traumatología.">
+    
+    <!-- Fonts: Helvetica (System Font) -->
+    <style>
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+        }
+    </style>
+
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1c3f87',
+                        secondary: '#3b82f6',
+                        accent: '#10b981',
+                        dark: '#0f172a',
+                    },
+                    fontFamily: {
+                        sans: ['Helvetica', 'Arial', 'sans-serif'],
+                        raleway: ['Helvetica', 'Arial', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Iconos Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#f8fafc] text-dark">
+
+    <!-- Navigation -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between bg-white/70 backdrop-blur-xl border border-white/20 shadow-lg rounded-2xl px-6 h-16">
+            
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-4 cursor-pointer group">
+                <img src="LOGO AZUL.png" alt="Villalba Logo" class="h-12 w-auto transition-transform group-hover:scale-105">
+                <div class="hidden sm:flex flex-col leading-tight">
+                    <span class="text-lg font-bold text-primary font-raleway tracking-tight">Villalba Hnos.</span>
+                    <span class="text-[10px] font-extrabold text-secondary font-raleway uppercase tracking-[0.2em]">Implantes</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-0.5">
+                <a href="index.html" class="nav-link px-3 py-2 text-[13px] font-bold text-slate-500 hover:text-primary transition-colors rounded-lg">Inicio</a>
+                <a href="novedades.html" class="nav-link px-3 py-2 text-[13px] font-bold text-primary transition-colors rounded-lg">Novedades</a>
+                <a href="empresa.html" class="nav-link px-3 py-2 text-[13px] font-bold text-slate-500 hover:text-primary transition-colors rounded-lg">Empresa</a>
+                <a href="comunidad.html" class="nav-link px-3 py-2 text-[13px] font-bold text-slate-500 hover:text-primary transition-colors rounded-lg">Comunidad</a>
+                <a href="certificaciones.html" class="nav-link px-3 py-2 text-[13px] font-bold text-slate-500 hover:text-primary transition-colors rounded-lg">Certificaciones</a>
+                <a href="distribuidores.html" class="nav-link px-3 py-2 text-[13px] font-bold text-slate-500 hover:text-primary transition-colors rounded-lg">Distribuidores</a>
+                <a href="catalogo.html" class="nav-link px-3 py-2 text-[13px] font-bold text-slate-500 hover:text-primary transition-colors rounded-lg">Catálogo</a>
+                <div class="w-px h-6 bg-slate-200 mx-2"></div>
+                <a href="trabaja-con-nosotros.html" class="bg-primary text-white px-4 py-2.5 rounded-xl text-[12px] font-black hover:bg-secondary hover:shadow-xl hover:shadow-secondary/20 transition-all active:scale-95">
+                    Trabaja con nosotros
+                </a>
+            </nav>
+
+            <!-- Mobile Toggle -->
+            <button class="md:hidden text-primary p-2" onclick="toggleMenu()">
+                <i data-lucide="menu" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-24 left-6 right-6 bg-white/95 backdrop-blur-2xl rounded-3xl shadow-2xl border border-slate-100 p-8 flex-col gap-6 md:hidden animate-fade-up">
+            <a href="index.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Inicio</a>
+            <a href="novedades.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Novedades</a>
+            <a href="empresa.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Empresa</a>
+            <a href="comunidad.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Comunidad</a>
+            <a href="certificaciones.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Certificaciones</a>
+            <a href="distribuidores.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Distribuidores</a>
+            <a href="catalogo.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Catálogo</a>
+            <a href="trabaja-con-nosotros.html" class="bg-primary text-white py-4 rounded-2xl font-bold text-center mt-4 shadow-lg">Trabaja con nosotros</a>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20">
+        <!-- Hero Section -->
+        <section class="max-w-7xl mx-auto px-6 mb-20 text-center">
+            <span class="text-secondary font-black text-sm uppercase tracking-[0.3em] mb-4 block reveal">Actualidad Villalba</span>
+            <h1 class="text-5xl md:text-7xl font-black text-primary tracking-tighter mb-6 reveal">Novedades y <span class="text-secondary">Eventos</span>.</h1>
+            <p class="text-xl text-slate-500 max-w-2xl mx-auto reveal">Manténgase conectado con nuestra labor diaria, avances tecnológicos y participación en congresos médicos.</p>
+        </section>
+
+        <!-- Instagram Feed Section -->
+        <section class="max-w-7xl mx-auto px-6 mb-32">
+            <div class="flex flex-col md:flex-row items-center justify-between mb-16 gap-8">
+                <div>
+                    <h2 class="text-4xl font-black text-primary tracking-tight mb-2">Conecte con Nosotros</h2>
+                    <p class="text-slate-500 font-bold flex items-center gap-2">
+                        <i data-lucide="instagram" class="w-5 h-5 text-secondary"></i> @implantesvillalba
+                    </p>
+                </div>
+                <a href="https://www.instagram.com/implantesvillalba/" target="_blank" class="bg-white border-2 border-slate-100 px-8 py-4 rounded-2xl text-primary font-black text-sm uppercase tracking-widest hover:border-secondary hover:text-secondary transition-all flex items-center gap-3 group">
+                    Seguir en Instagram <i data-lucide="external-link" class="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <!-- Post 1: Control -->
+                <div class="group reveal">
+                    <div class="relative aspect-[4/5] rounded-[40px] overflow-hidden mb-6 shadow-xl group-hover:shadow-primary/20 transition-all border border-slate-100">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Control de Calidad">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8 text-white">
+                            <p class="text-[10px] font-black tracking-widest uppercase mb-2">Calidad</p>
+                            <h4 class="text-xl font-black">Hay Control.</h4>
+                        </div>
+                    </div>
+                    <h4 class="text-lg font-black text-primary mb-2">Garantía de Calidad</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">Supervisión constante en cada etapa del proceso de producción.</p>
+                </div>
+
+                <!-- Post 2: 60 Años -->
+                <div class="group reveal" style="transition-delay: 0.1s;">
+                    <div class="relative aspect-[4/5] rounded-[40px] overflow-hidden mb-6 shadow-xl group-hover:shadow-primary/20 transition-all border border-slate-100">
+                        <img src="60-años.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="60 Años Villalba">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8 text-white">
+                            <p class="text-[10px] font-black tracking-widest uppercase mb-2">Trayectoria</p>
+                            <h4 class="text-xl font-black">60 Años al Servicio de la Salud.</h4>
+                        </div>
+                    </div>
+                    <h4 class="text-lg font-black text-primary mb-2">Aniversario Diamante</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">Desde 1966, fabricantes argentinos de soluciones traumatológicas.</p>
+                </div>
+
+                <!-- Post 3: Movimiento -->
+                <div class="group reveal" style="transition-delay: 0.2s;">
+                    <div class="relative aspect-[4/5] rounded-[40px] overflow-hidden mb-6 shadow-xl group-hover:shadow-primary/20 transition-all border border-slate-100">
+                        <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Con cada movimiento">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8 text-white">
+                            <p class="text-[10px] font-black tracking-widest uppercase mb-2">Compromiso</p>
+                            <h4 class="text-xl font-black">Con cada Movimiento.</h4>
+                        </div>
+                    </div>
+                    <h4 class="text-lg font-black text-primary mb-2">Vocación y Servicio</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">Homenajeamos a los profesionales que restauran la movilidad día tras día.</p>
+                </div>
+
+                <!-- Post 4: Esterilización -->
+                <div class="group reveal" style="transition-delay: 0.3s;">
+                    <div class="relative aspect-[4/5] rounded-[40px] overflow-hidden mb-6 shadow-xl group-hover:shadow-primary/20 transition-all border border-slate-100">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Proceso de Esterilización">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8 text-white">
+                            <p class="text-[10px] font-black tracking-widest uppercase mb-2">Seguridad</p>
+                            <h4 class="text-xl font-black">Proceso de Esterilización.</h4>
+                        </div>
+                    </div>
+                    <h4 class="text-lg font-black text-primary mb-2">Seguridad y Control</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">Máximos estándares en higiene para cada uno de nuestros implantes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section class="max-w-7xl mx-auto px-6 mb-32">
+            <div class="flex items-center gap-6 mb-16">
+                <h2 class="text-4xl font-black text-primary tracking-tight">Calendario Institucional</h2>
+                <div class="h-px flex-grow bg-slate-200"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- AAOT 2026 -->
+                <div class="bg-white p-12 rounded-[56px] border border-slate-100 shadow-xl flex flex-col md:flex-row gap-12 items-start reveal">
+                    <div class="bg-primary w-24 h-24 rounded-3xl flex flex-col items-center justify-center flex-shrink-0 shadow-lg shadow-primary/20">
+                        <span class="text-white font-black text-3xl">17</span>
+                        <span class="text-white/60 font-black text-[10px] uppercase tracking-widest">Nov</span>
+                    </div>
+                    <div class="flex-grow">
+                        <span class="text-secondary font-black text-[10px] tracking-[0.2em] uppercase mb-4 block">Congreso Nacional</span>
+                        <h3 class="text-2xl font-black text-primary mb-6 leading-tight">63° Congreso Argentino de Ortopedia y Traumatología (AAOT)</h3>
+                        <p class="text-slate-500 mb-8 font-medium">Villalba Hnos. participará con un despliegue tecnológico único en el Hotel Hilton de Buenos Aires. El evento científico más importante del año.</p>
+                        <div class="flex flex-wrap gap-6 items-center">
+                            <span class="flex items-center gap-2 text-slate-400 text-sm font-bold"><i data-lucide="map-pin" class="w-4 h-4 text-secondary"></i> Hotel Hilton, Puerto Madero</span>
+                            <span class="flex items-center gap-2 text-slate-400 text-sm font-bold"><i data-lucide="calendar" class="w-4 h-4 text-secondary"></i> 17 al 19 de Noviembre</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resident Congress -->
+                <div class="bg-white p-12 rounded-[56px] border border-slate-100 shadow-xl flex flex-col md:flex-row gap-12 items-start reveal" style="transition-delay: 0.2s;">
+                    <div class="bg-slate-50 w-24 h-24 rounded-3xl flex flex-col items-center justify-center flex-shrink-0 border-2 border-secondary/10">
+                        <span class="text-primary font-black text-3xl">05</span>
+                        <span class="text-slate-400 font-black text-[10px] uppercase tracking-widest">May</span>
+                    </div>
+                    <div class="flex-grow">
+                        <span class="text-accent font-black text-[10px] tracking-[0.2em] uppercase mb-4 block">Formación Médica</span>
+                        <h3 class="text-2xl font-black text-primary mb-6 leading-tight">XXXI Congreso Nacional de Residentes de Ortopedia y Traumatología</h3>
+                        <p class="text-slate-500 mb-8 font-medium">Acompañamos a las futuras generaciones de especialistas en Rosario, fomentando la excelencia académica y técnica.</p>
+                        <div class="flex flex-wrap gap-6 items-center">
+                            <span class="flex items-center gap-2 text-slate-400 text-sm font-bold"><i data-lucide="map-pin" class="w-4 h-4 text-secondary"></i> Ciudad de Rosario</span>
+                            <span class="flex items-center gap-2 text-slate-400 text-sm font-bold"><i data-lucide="users" class="w-4 h-4 text-secondary"></i> 250+ Participantes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter / CTA -->
+        <section class="max-w-7xl mx-auto px-6">
+            <div class="bg-primary rounded-[60px] p-12 md:p-24 text-center text-white relative overflow-hidden reveal">
+                <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+                <div class="relative z-10">
+                    <h2 class="text-4xl md:text-6xl font-black mb-8 tracking-tighter">¿Quiere recibir nuestras novedades?</h2>
+                    <p class="text-xl text-slate-300 max-w-2xl mx-auto mb-12">Suscríbase para recibir información técnica, lanzamientos de productos y calendarios de eventos.</p>
+                    <form class="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
+                        <input type="email" placeholder="Su correo electrónico" class="flex-grow bg-white/10 border border-white/20 rounded-2xl px-6 py-4 outline-none focus:ring-4 focus:ring-secondary/30 transition-all font-semibold text-white placeholder:text-white/40">
+                        <button class="bg-white text-primary px-10 py-4 rounded-2xl font-black hover:bg-secondary hover:text-white transition-all shadow-2xl">SUSCRIBIRSE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white pt-32 pb-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24">
+                <div class="lg:col-span-2">
+                    <a href="index.html" class="flex items-center gap-4 mb-10 cursor-pointer">
+                        <img src="LOGO AZUL.png" alt="Villalba Logo" class="h-14 w-auto brightness-0 invert">
+                        <div class="flex flex-col leading-tight">
+                            <span class="text-xl font-bold text-white font-raleway tracking-tight">Villalba Hnos.</span>
+                            <span class="text-[11px] font-extrabold text-secondary font-raleway uppercase tracking-[0.2em]">Implantes</span>
+                        </div>
+                    </a>
+                    <p class="text-slate-400 max-w-sm leading-relaxed font-medium">
+                        Líderes en tecnología médica para traumatología. Comprometidos con la excelencia técnica y la recuperación del paciente desde hace más de seis décadas.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="text-secondary font-black text-xs uppercase tracking-[0.3em] mb-10">Navegación</h5>
+                    <ul class="space-y-6">
+                        <li><a href="index.html" class="text-slate-300 font-bold hover:text-white transition-colors">Inicio</a></li>
+                        <li><a href="novedades.html" class="text-slate-300 font-bold hover:text-white transition-colors">Novedades</a></li>
+                        <li><a href="empresa.html" class="text-slate-300 font-bold hover:text-white transition-colors">Empresa</a></li>
+                        <li><a href="comunidad.html" class="text-slate-300 font-bold hover:text-white transition-colors">Comunidad</a></li>
+                        <li><a href="certificaciones.html" class="text-slate-300 font-bold hover:text-white transition-colors">Certificaciones</a></li>
+                        <li><a href="distribuidores.html" class="text-slate-300 font-bold hover:text-white transition-colors">Distribuidores</a></li>
+                        <li><a href="catalogo.html" class="text-slate-300 font-bold hover:text-white transition-colors">Catálogo</a></li>
+                        <li><a href="trabaja-con-nosotros.html" class="text-slate-300 font-bold hover:text-white transition-colors">Trabaja con nosotros</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-secondary font-black text-xs uppercase tracking-[0.3em] mb-10">Legal</h5>
+                    <ul class="space-y-6">
+                        <li><a href="#" class="text-slate-300 font-bold hover:text-white transition-colors">Certificación ANMAT</a></li>
+                        <li><a href="#" class="text-slate-300 font-bold hover:text-white transition-colors">Términos de Uso</a></li>
+                        <li><a href="#" class="text-slate-300 font-bold hover:text-white transition-colors">Políticas de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/5 pt-16 flex flex-col md:flex-row justify-between items-center gap-10">
+                <p class="text-slate-500 text-[10px] font-black uppercase tracking-[0.3em]">© 2026 Villalba Medical S.A. Todos los derechos reservados.</p>
+                <div class="flex items-center gap-4 bg-white/5 px-6 py-3 rounded-2xl border border-white/10">
+                    <span class="flex h-2 w-2 rounded-full bg-accent"></span>
+                    <span class="text-[10px] font-black uppercase tracking-widest text-slate-400">Soporte Técnico Activo</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

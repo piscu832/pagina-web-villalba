@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Productos | Villalba Hnos. Implantes</title>
+    <title>Catálogo | Villalba Hnos. Implantes</title>
     
     <!-- Meta Tags SEO -->
     <meta name="description" content="Explore nuestro catálogo de implantes para osteosíntesis y artroscopía. Tecnología médica de alta gama certificada por ANMAT.">
     
-    <!-- Fonts: Outfit & Raleway -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Fonts: Helvetica (System Font) -->
+    <style>
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+        }
+    </style>
+
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -26,8 +29,8 @@
                         dark: '#0f172a',
                     },
                     fontFamily: {
-                        sans: ['Outfit', 'sans-serif'],
-                        raleway: ['Raleway', 'sans-serif'],
+                        sans: ['Helvetica', 'Arial', 'sans-serif'],
+                        raleway: ['Helvetica', 'Arial', 'sans-serif'],
                     }
                 }
             }
@@ -56,14 +59,17 @@
             </a>
 
             <!-- Desktop Nav -->
-            <nav class="hidden md:flex items-center gap-1">
-                <a href="index.html" class="nav-link px-4 py-2 text-sm font-semibold text-slate-500 hover:text-primary transition-colors rounded-lg">Inicio</a>
-                <a href="nosotros.html" class="nav-link px-4 py-2 text-sm font-semibold text-slate-500 hover:text-primary transition-colors rounded-lg">Empresa</a>
-                <a href="pacientes.html" class="nav-link px-4 py-2 text-sm font-semibold text-slate-500 hover:text-primary transition-colors rounded-lg">Pacientes</a>
-                <a href="productos.html" class="nav-link px-4 py-2 text-sm font-semibold text-slate-500 hover:text-primary transition-colors rounded-lg">Productos</a>
+            <nav class="hidden md:flex items-center gap-0.5">
+                <a href="index.html" class="nav-link px-3 py-2 text-[13px] font-bold text-slate-500 hover:text-primary transition-colors rounded-lg">Inicio</a>
+                <a href="novedades.html" class="nav-link px-3 py-2 text-[13px] font-bold text-slate-500 hover:text-primary transition-colors rounded-lg">Novedades</a>
+                <a href="empresa.html" class="nav-link px-3 py-2 text-[13px] font-bold text-slate-500 hover:text-primary transition-colors rounded-lg">Empresa</a>
+                <a href="comunidad.html" class="nav-link px-3 py-2 text-[13px] font-bold text-slate-500 hover:text-primary transition-colors rounded-lg">Comunidad</a>
+                <a href="certificaciones.html" class="nav-link px-3 py-2 text-[13px] font-bold text-slate-500 hover:text-primary transition-colors rounded-lg">Certificaciones</a>
+                <a href="distribuidores.html" class="nav-link px-3 py-2 text-[13px] font-bold text-slate-500 hover:text-primary transition-colors rounded-lg">Distribuidores</a>
+                <a href="catalogo.html" class="nav-link px-3 py-2 text-[13px] font-bold text-slate-500 hover:text-primary transition-colors rounded-lg">Catálogo</a>
                 <div class="w-px h-6 bg-slate-200 mx-2"></div>
-                <a href="contacto.html" class="bg-primary text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-secondary hover:shadow-xl hover:shadow-secondary/20 transition-all active:scale-95">
-                    Contacto
+                <a href="trabaja-con-nosotros.html" class="bg-primary text-white px-4 py-2.5 rounded-xl text-[12px] font-black hover:bg-secondary hover:shadow-xl hover:shadow-secondary/20 transition-all active:scale-95">
+                    Trabaja con nosotros
                 </a>
             </nav>
 
@@ -76,10 +82,13 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden absolute top-24 left-6 right-6 bg-white/95 backdrop-blur-2xl rounded-3xl shadow-2xl border border-slate-100 p-8 flex-col gap-6 md:hidden animate-fade-up">
             <a href="index.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Inicio</a>
-            <a href="nosotros.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Empresa</a>
-            <a href="pacientes.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Pacientes</a>
-            <a href="productos.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Productos</a>
-            <a href="contacto.html" class="bg-primary text-white py-4 rounded-2xl font-bold text-center mt-4 shadow-lg">Hablar con un Asesor</a>
+            <a href="novedades.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Novedades</a>
+            <a href="empresa.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Empresa</a>
+            <a href="comunidad.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Comunidad</a>
+            <a href="certificaciones.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Certificaciones</a>
+            <a href="distribuidores.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Distribuidores</a>
+            <a href="catalogo.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Catálogo</a>
+            <a href="trabaja-con-nosotros.html" class="bg-primary text-white py-4 rounded-2xl font-bold text-center mt-4 shadow-lg">Trabaja con nosotros</a>
         </div>
     </header>
 
@@ -112,7 +121,7 @@
                         <div class="absolute bottom-10 left-10 right-10">
                             <h3 class="text-3xl font-black text-white mb-4 leading-tight">Sistemas de Bloqueo Anatómico</h3>
                             <p class="text-white/70 text-sm mb-6 line-clamp-2">Placas de titanio de bajo perfil diseñadas para la estabilización de fracturas diafisarias y metafisarias.</p>
-                            <a href="contacto.html" class="bg-white text-primary w-full py-4 rounded-2xl font-bold hover:bg-secondary hover:text-white transition-all flex items-center justify-center">Consultar Especificaciones</a>
+                            <a href="trabaja-con-nosotros.html" class="bg-white text-primary w-full py-4 rounded-2xl font-bold hover:bg-secondary hover:text-white transition-all flex items-center justify-center">Consultar Especificaciones</a>
                         </div>
                     </div>
                 </div>
@@ -126,7 +135,7 @@
                         <div class="absolute bottom-10 left-10 right-10">
                             <h3 class="text-3xl font-black text-white mb-4 leading-tight">Anclajes de Alta Resistencia</h3>
                             <p class="text-white/70 text-sm mb-6 line-clamp-2">Soluciones bio-absorbibles y PEEK para reconstrucción de manguito rotador e inestabilidad de hombro.</p>
-                            <a href="contacto.html" class="bg-white text-primary w-full py-4 rounded-2xl font-bold hover:bg-primary hover:text-white transition-all flex items-center justify-center">Consultar Especificaciones</a>
+                            <a href="trabaja-con-nosotros.html" class="bg-white text-primary w-full py-4 rounded-2xl font-bold hover:bg-primary hover:text-white transition-all flex items-center justify-center">Consultar Especificaciones</a>
                         </div>
                     </div>
                 </div>
@@ -140,7 +149,7 @@
                         <div class="absolute bottom-10 left-10 right-10">
                             <h3 class="text-3xl font-black text-white mb-4 leading-tight">Clavos Intramedulares Expert</h3>
                             <p class="text-white/70 text-sm mb-6 line-clamp-2">Diseño anatómico canulado para fémur, tibia y húmero, facilitando la consolidación ósea temprana.</p>
-                            <a href="contacto.html" class="bg-white text-primary w-full py-4 rounded-2xl font-bold hover:bg-secondary hover:text-white transition-all flex items-center justify-center">Consultar Especificaciones</a>
+                            <a href="trabaja-con-nosotros.html" class="bg-white text-primary w-full py-4 rounded-2xl font-bold hover:bg-secondary hover:text-white transition-all flex items-center justify-center">Consultar Especificaciones</a>
                         </div>
                     </div>
                 </div>
@@ -167,9 +176,13 @@
                     <h5 class="text-secondary font-black text-xs uppercase tracking-[0.3em] mb-10">Navegación</h5>
                     <ul class="space-y-6">
                         <li><a href="index.html" class="text-slate-300 font-bold hover:text-white transition-colors">Inicio</a></li>
-                        <li><a href="nosotros.html" class="text-slate-300 font-bold hover:text-white transition-colors">Empresa</a></li>
-                        <li><a href="pacientes.html" class="text-slate-300 font-bold hover:text-white transition-colors">Pacientes</a></li>
-                        <li><a href="productos.html" class="text-slate-300 font-bold hover:text-white transition-colors">Catálogo</a></li>
+                        <li><a href="novedades.html" class="text-slate-300 font-bold hover:text-white transition-colors">Novedades</a></li>
+                        <li><a href="empresa.html" class="text-slate-300 font-bold hover:text-white transition-colors">Empresa</a></li>
+                        <li><a href="comunidad.html" class="text-slate-300 font-bold hover:text-white transition-colors">Comunidad</a></li>
+                        <li><a href="certificaciones.html" class="text-slate-300 font-bold hover:text-white transition-colors">Certificaciones</a></li>
+                        <li><a href="distribuidores.html" class="text-slate-300 font-bold hover:text-white transition-colors">Distribuidores</a></li>
+                        <li><a href="catalogo.html" class="text-slate-300 font-bold hover:text-white transition-colors">Catálogo</a></li>
+                        <li><a href="trabaja-con-nosotros.html" class="text-slate-300 font-bold hover:text-white transition-colors">Trabaja con nosotros</a></li>
                     </ul>
                 </div>
                 <div>
