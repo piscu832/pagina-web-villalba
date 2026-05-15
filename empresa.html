@@ -99,88 +99,158 @@
             <h1 class="text-5xl md:text-7xl font-black text-primary tracking-tighter mb-10 reveal">Liderazgo y Compromiso <br> con la Vida.</h1>
             <div class="h-1.5 w-24 bg-secondary rounded-full reveal mb-20"></div>
 
-            <!-- Animated Timeline Section -->
-            <div class="relative py-12 overflow-x-auto hide-scrollbar reveal">
-                <div class="min-w-[1200px] px-12 relative">
-                    <!-- Progress Bar Background -->
-                    <div class="absolute top-1/2 left-0 w-full h-0.5 bg-slate-200 -translate-y-1/2"></div>
-                    
-                    <div class="flex justify-between items-center relative z-10">
-                        <!-- 1966 -->
-                        <div class="flex flex-col items-center gap-6 group">
-                            <span class="text-xs font-black text-slate-400 tracking-widest uppercase">1966</span>
-                            <div class="w-5 h-5 rounded-full bg-white border-4 border-primary group-hover:scale-150 group-hover:bg-primary transition-all duration-300"></div>
-                            <div class="text-center w-40">
-                                <h4 class="text-sm font-black text-primary mb-1">Fundación</h4>
-                                <p class="text-[11px] text-slate-500 leading-tight">Inicio de la fabricación de implantes en Argentina.</p>
-                            </div>
-                        </div>
-
-                        <!-- 1976 -->
-                        <div class="flex flex-col items-center gap-6 group">
-                            <span class="text-xs font-black text-slate-400 tracking-widest uppercase">1976</span>
-                            <div class="w-5 h-5 rounded-full bg-white border-4 border-secondary group-hover:scale-150 group-hover:bg-secondary transition-all duration-300"></div>
-                            <div class="text-center w-40">
-                                <h4 class="text-sm font-black text-primary mb-1">Expansión</h4>
-                                <p class="text-[11px] text-slate-500 leading-tight">Consolidación del mercado nacional y regional.</p>
-                            </div>
-                        </div>
-
-                        <!-- 1986 -->
-                        <div class="flex flex-col items-center gap-6 group">
-                            <span class="text-xs font-black text-slate-400 tracking-widest uppercase">1986</span>
-                            <div class="w-5 h-5 rounded-full bg-white border-4 border-primary group-hover:scale-150 group-hover:bg-primary transition-all duration-300"></div>
-                            <div class="text-center w-40">
-                                <h4 class="text-sm font-black text-primary mb-1">Innovación</h4>
-                                <p class="text-[11px] text-slate-500 leading-tight">Nuevos materiales biocompatibles de alta tecnología.</p>
-                            </div>
-                        </div>
-
-                        <!-- 1996 -->
-                        <div class="flex flex-col items-center gap-6 group">
-                            <span class="text-xs font-black text-slate-400 tracking-widest uppercase">1996</span>
-                            <div class="w-5 h-5 rounded-full bg-white border-4 border-secondary group-hover:scale-150 group-hover:bg-secondary transition-all duration-300"></div>
-                            <div class="text-center w-40">
-                                <h4 class="text-sm font-black text-primary mb-1">Modernización</h4>
-                                <p class="text-[11px] text-slate-500 leading-tight">Incorporación de sistemas CNC de máxima precisión.</p>
-                            </div>
-                        </div>
-
-                        <!-- 2006 -->
-                        <div class="flex flex-col items-center gap-6 group">
-                            <span class="text-xs font-black text-slate-400 tracking-widest uppercase">2006</span>
-                            <div class="w-5 h-5 rounded-full bg-white border-4 border-primary group-hover:scale-150 group-hover:bg-primary transition-all duration-300"></div>
-                            <div class="text-center w-40">
-                                <h4 class="text-sm font-black text-primary mb-1">Liderazgo</h4>
-                                <p class="text-[11px] text-slate-500 leading-tight">Referentes indiscutidos en soporte técnico hospitalario.</p>
-                            </div>
-                        </div>
-
-                        <!-- 2016 -->
-                        <div class="flex flex-col items-center gap-6 group">
-                            <span class="text-xs font-black text-slate-400 tracking-widest uppercase">2016</span>
-                            <div class="w-5 h-5 rounded-full bg-white border-4 border-secondary group-hover:scale-150 group-hover:bg-secondary transition-all duration-300"></div>
-                            <div class="text-center w-40">
-                                <h4 class="text-sm font-black text-primary mb-1">50 Aniversario</h4>
-                                <p class="text-[11px] text-slate-500 leading-tight">Inauguración de nueva sede central modelo.</p>
-                            </div>
-                        </div>
-
-                        <!-- 2026 -->
-                        <div class="flex flex-col items-center gap-6 group">
-                            <span class="text-xs font-black text-slate-400 tracking-widest uppercase">Hoy</span>
-                            <div class="w-8 h-8 rounded-full bg-primary border-4 border-white shadow-lg group-hover:scale-125 transition-all duration-300 flex items-center justify-center">
-                                <i data-lucide="award" class="text-white w-4 h-4"></i>
-                            </div>
-                            <div class="text-center w-40">
-                                <h4 class="text-sm font-black text-primary mb-1">60 Años</h4>
-                                <p class="text-[11px] text-slate-500 leading-tight font-bold italic">Liderando el futuro de la traumatología.</p>
-                            </div>
-                        </div>
+            <!-- Advanced Timeline Slider Section -->
+            <section class="mt-20 mb-32 reveal">
+                <div class="flex items-center justify-between mb-12">
+                    <h2 class="text-3xl font-black text-primary tracking-tight">Nuestra Historia en Movimiento</h2>
+                    <div class="flex gap-4">
+                        <button onclick="document.getElementById('timeline-slider').scrollBy({left: -400, behavior: 'smooth'})" class="w-12 h-12 rounded-full border-2 border-slate-200 flex items-center justify-center text-primary hover:border-primary transition-colors">
+                            <i data-lucide="chevron-left"></i>
+                        </button>
+                        <button onclick="document.getElementById('timeline-slider').scrollBy({left: 400, behavior: 'smooth'})" class="w-12 h-12 rounded-full border-2 border-slate-200 flex items-center justify-center text-primary hover:border-primary transition-colors">
+                            <i data-lucide="chevron-right"></i>
+                        </button>
                     </div>
                 </div>
-            </div>
-        </section>
+
+                <div id="timeline-slider" class="flex gap-8 overflow-x-auto snap-x snap-mandatory hide-scrollbar pb-12">
+                    <!-- Original Items -->
+                    <div class="timeline-item min-w-[450px] snap-center group">
+                        <div class="relative rounded-[60px] overflow-hidden mb-8 aspect-[4/3] shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt="1966 Fundación">
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent p-12 flex flex-col justify-end text-white">
+                                <span class="text-5xl font-black mb-4 opacity-50">1966</span>
+                                <h3 class="text-2xl font-black mb-2">La Semilla</h3>
+                                <p class="text-sm text-slate-200 leading-relaxed">Fundación de Villalba Hnos. Iniciamos el sueño de fabricar soluciones quirúrgicas con sello argentino.</p>
+                            </div>
+                        </div>
+                        <div class="h-1 w-24 bg-secondary rounded-full group-hover:w-full transition-all duration-700"></div>
+                    </div>
+
+                    <div class="timeline-item min-w-[450px] snap-center group">
+                        <div class="relative rounded-[60px] overflow-hidden mb-8 aspect-[4/3] shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt="1976 Crecimiento">
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent p-12 flex flex-col justify-end text-white">
+                                <span class="text-5xl font-black mb-4 opacity-50">1976</span>
+                                <h3 class="text-2xl font-black mb-2">Expansión Nacional</h3>
+                                <p class="text-sm text-slate-200 leading-relaxed">Nuestra red de distribución llega a las principales provincias, consolidando la confianza médica.</p>
+                            </div>
+                        </div>
+                        <div class="h-1 w-24 bg-slate-200 rounded-full group-hover:w-full group-hover:bg-secondary transition-all duration-700"></div>
+                    </div>
+
+                    <div class="timeline-item min-w-[450px] snap-center group">
+                        <div class="relative rounded-[60px] overflow-hidden mb-8 aspect-[4/3] shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1579154273022-7933f7f02717?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt="1986 Tecnología">
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent p-12 flex flex-col justify-end text-white">
+                                <span class="text-5xl font-black mb-4 opacity-50">1986</span>
+                                <h3 class="text-2xl font-black mb-2">Vanguardia Técnica</h3>
+                                <p class="text-sm text-slate-200 leading-relaxed">Introducción de materiales biocompatibles importados para procesos de alta complejidad.</p>
+                            </div>
+                        </div>
+                        <div class="h-1 w-24 bg-slate-200 rounded-full group-hover:w-full group-hover:bg-secondary transition-all duration-700"></div>
+                    </div>
+
+                    <div class="timeline-item min-w-[450px] snap-center group">
+                        <div class="relative rounded-[60px] overflow-hidden mb-8 aspect-[4/3] shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt="1996 Precisión">
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent p-12 flex flex-col justify-end text-white">
+                                <span class="text-5xl font-black mb-4 opacity-50">1996</span>
+                                <h3 class="text-2xl font-black mb-2">Era Digital</h3>
+                                <p class="text-sm text-slate-200 leading-relaxed">Implementación de maquinaria CNC japonesa para tolerancias de micrones en implantes.</p>
+                            </div>
+                        </div>
+                        <div class="h-1 w-24 bg-slate-200 rounded-full group-hover:w-full group-hover:bg-secondary transition-all duration-700"></div>
+                    </div>
+
+                    <div class="timeline-item min-w-[450px] snap-center group">
+                        <div class="relative rounded-[60px] overflow-hidden mb-8 aspect-[4/3] shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1582213726839-ed188f047435?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt="2006 Alianza">
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent p-12 flex flex-col justify-end text-white">
+                                <span class="text-5xl font-black mb-4 opacity-50">2006</span>
+                                <h3 class="text-2xl font-black mb-2">Liderazgo Regional</h3>
+                                <p class="text-sm text-slate-200 leading-relaxed">Consolidación como proveedores estratégicos de los principales centros de salud del país.</p>
+                            </div>
+                        </div>
+                        <div class="h-1 w-24 bg-slate-200 rounded-full group-hover:w-full group-hover:bg-secondary transition-all duration-700"></div>
+                    </div>
+
+                    <div class="timeline-item min-w-[450px] snap-center group">
+                        <div class="relative rounded-[60px] overflow-hidden mb-8 aspect-[4/3] shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt="2016 Evolución">
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent p-12 flex flex-col justify-end text-white">
+                                <span class="text-5xl font-black mb-4 opacity-50">2016</span>
+                                <h3 class="text-2xl font-black mb-2">50 Aniversario</h3>
+                                <p class="text-sm text-slate-200 leading-relaxed">Inauguración de nuestra nueva planta industrial inteligente con estándares internacionales.</p>
+                            </div>
+                        </div>
+                        <div class="h-1 w-24 bg-slate-200 rounded-full group-hover:w-full group-hover:bg-secondary transition-all duration-700"></div>
+                    </div>
+
+                    <div class="timeline-item min-w-[450px] snap-center group">
+                        <div class="relative rounded-[60px] overflow-hidden mb-8 aspect-[4/3] shadow-2xl ring-8 ring-secondary/20">
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt="2026 Futuro">
+                            <div class="absolute inset-0 bg-gradient-to-t from-secondary/90 via-primary/20 to-transparent p-12 flex flex-col justify-end text-white">
+                                <span class="text-5xl font-black mb-4 opacity-50">Hoy</span>
+                                <h3 class="text-2xl font-black mb-2">Seis Décadas</h3>
+                                <p class="text-sm text-slate-200 leading-relaxed font-bold">Liderando la industria con 60 años de compromiso ininterrumpido con la excelencia.</p>
+                            </div>
+                        </div>
+                        <div class="h-2 w-full bg-secondary rounded-full shadow-lg shadow-secondary/50"></div>
+                    </div>
+                </div>
+
+                <script>
+                    // Stepped Auto-Scroll for Timeline (Frenando en cada hito)
+                    const slider = document.getElementById('timeline-slider');
+                    let isPaused = false;
+                    let currentIndex = 0;
+                    const items = slider.getElementsByClassName('timeline-item');
+                    const itemCount = items.length;
+
+                    slider.addEventListener('mouseenter', () => isPaused = true);
+                    slider.addEventListener('mouseleave', () => isPaused = false);
+
+                    // Duplicate items for seamless loop
+                    const originalContent = slider.innerHTML;
+                    slider.innerHTML += originalContent;
+
+                    function nextStep() {
+                        if (!isPaused) {
+                            currentIndex++;
+                            
+                            // Si llegamos al final de la primera tanda, saltamos al inicio sin que se note
+                            if (currentIndex >= itemCount) {
+                                slider.style.scrollBehavior = 'auto';
+                                slider.scrollLeft = 0;
+                                currentIndex = 0;
+                                
+                                setTimeout(() => {
+                                    slider.style.scrollBehavior = 'smooth';
+                                    nextStep();
+                                }, 50);
+                                return;
+                            }
+
+                            const nextItem = items[currentIndex];
+                            slider.scrollTo({
+                                left: nextItem.offsetLeft - slider.offsetLeft,
+                                behavior: 'smooth'
+                            });
+                        }
+                        
+                        // Esperar 3 segundos antes del prximo hito
+                        setTimeout(nextStep, 3000);
+                    }
+
+                    // Iniciar después de 2 segundos
+                    setTimeout(() => {
+                        slider.style.scrollBehavior = 'smooth';
+                        nextStep();
+                    }, 2000);
+                </script>
+            </section>
+
 
 
         <!-- Content Section -->
