@@ -105,49 +105,115 @@
             <div class="h-1.5 w-24 bg-secondary rounded-full reveal"></div>
         </section>
 
-        <!-- Content Section -->
-        <section class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-            <div class="reveal">
-                <p class="text-xl text-slate-600 leading-relaxed mb-8 font-medium">
-                    Nuestra red de distribuidores autorizados asegura que los productos Villalba estén disponibles en las instituciones médicas más importantes del país con rapidez y eficiencia.
+        <!-- Content Section with Map -->
+        <section class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            <!-- Text and List (Left) -->
+            <div class="lg:col-span-5 reveal">
+                <p class="text-xl text-slate-600 leading-relaxed mb-6 font-medium">
+                    Nuestra red de 12 centros de distribución estratégica asegura que los productos Villalba estén disponibles en las instituciones médicas más importantes del país con rapidez y eficiencia.
                 </p>
                 <p class="text-lg text-slate-500 leading-relaxed mb-10">
-                    Trabajamos con socios estratégicos que comparten nuestros valores de precisión técnica y compromiso con la recuperación del paciente.
+                    Llegamos a cada rincón de Argentina con soporte técnico especializado y stock permanente para urgencias.
                 </p>
                 
-
+                <!-- List of Centers -->
+                <div class="grid grid-cols-2 gap-4 text-sm font-bold text-slate-700">
+                    <div class="flex items-center gap-2"><span class="w-2 h-2 bg-secondary rounded-full"></span> CABA</div>
+                    <div class="flex items-center gap-2"><span class="w-2 h-2 bg-secondary rounded-full"></span> Rosario</div>
+                    <div class="flex items-center gap-2"><span class="w-2 h-2 bg-secondary rounded-full"></span> Córdoba</div>
+                    <div class="flex items-center gap-2"><span class="w-2 h-2 bg-secondary rounded-full"></span> Mendoza</div>
+                    <div class="flex items-center gap-2"><span class="w-2 h-2 bg-secondary rounded-full"></span> Tucumán</div>
+                    <div class="flex items-center gap-2"><span class="w-2 h-2 bg-secondary rounded-full"></span> Salta</div>
+                    <div class="flex items-center gap-2"><span class="w-2 h-2 bg-secondary rounded-full"></span> Neuquén</div>
+                    <div class="flex items-center gap-2"><span class="w-2 h-2 bg-secondary rounded-full"></span> Mar del Plata</div>
+                    <div class="flex items-center gap-2"><span class="w-2 h-2 bg-secondary rounded-full"></span> Bahía Blanca</div>
+                    <div class="flex items-center gap-2"><span class="w-2 h-2 bg-secondary rounded-full"></span> Corrientes</div>
+                    <div class="flex items-center gap-2"><span class="w-2 h-2 bg-secondary rounded-full"></span> Posadas</div>
+                    <div class="flex items-center gap-2"><span class="w-2 h-2 bg-secondary rounded-full"></span> Comodoro Rivadavia</div>
+                </div>
             </div>
             
-            <div class="relative reveal-right">
-                <div class="bg-primary rounded-[40px] p-12 text-white shadow-2xl relative z-10">
-                    <h3 class="text-3xl font-black mb-8">Nuestros Pilares</h3>
-                    <div class="space-y-8">
-                        <div class="flex gap-6">
-                            <i data-lucide="shield-check" class="text-secondary w-8 h-8 flex-shrink-0"></i>
-                            <div>
-                                <h4 class="text-xl font-bold mb-2">Rigor Científico</h4>
-                                <p class="text-slate-300 text-sm">Cada implante en nuestro catálogo ha pasado por los más estrictos controles de calidad y bio-compatibilidad.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-6">
-                            <i data-lucide="users" class="text-secondary w-8 h-8 flex-shrink-0"></i>
-                            <div>
-                                <h4 class="text-xl font-bold mb-2">Soporte Técnico</h4>
-                                <p class="text-slate-300 text-sm">Nuestros especialistas no solo entregan materiales; asisten en quirófano asegurando el éxito de la técnica quirúrgica.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-6">
-                            <i data-lucide="heart" class="text-secondary w-8 h-8 flex-shrink-0"></i>
-                            <div>
-                                <h4 class="text-xl font-bold mb-2">Empatía Humana</h4>
-                                <p class="text-slate-300 text-sm">Entendemos que detrás de cada orden médica hay una persona y una familia esperando respuestas.</p>
-                            </div>
-                        </div>
+            <!-- Map (Right) -->
+            <div class="lg:col-span-7 relative reveal-right">
+                <div class="relative bg-white rounded-[40px] p-6 shadow-2xl border border-slate-100 overflow-hidden aspect-[3/4] max-h-[700px] mx-auto">
+                    <!-- Map Image -->
+                    <img src="mapa_argentina.png" class="w-full h-full object-contain opacity-80" alt="Mapa de Argentina">
+                    
+                    <!-- Points -->
+                    <!-- Salta -->
+                    <div class="absolute group" style="top: 15%; left: 45%;">
+                        <div class="w-4 h-4 bg-secondary rounded-full animate-ping absolute"></div>
+                        <div class="w-4 h-4 bg-primary rounded-full relative border-2 border-white"></div>
+                        <span class="absolute left-6 top-1/2 -translate-y-1/2 bg-dark text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Salta</span>
+                    </div>
+                    <!-- Tucumán -->
+                    <div class="absolute group" style="top: 22%; left: 45%;">
+                        <div class="w-4 h-4 bg-secondary rounded-full animate-ping absolute"></div>
+                        <div class="w-4 h-4 bg-primary rounded-full relative border-2 border-white"></div>
+                        <span class="absolute left-6 top-1/2 -translate-y-1/2 bg-dark text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Tucumán</span>
+                    </div>
+                    <!-- Corrientes -->
+                    <div class="absolute group" style="top: 25%; left: 65%;">
+                        <div class="w-4 h-4 bg-secondary rounded-full animate-ping absolute"></div>
+                        <div class="w-4 h-4 bg-primary rounded-full relative border-2 border-white"></div>
+                        <span class="absolute left-6 top-1/2 -translate-y-1/2 bg-dark text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Corrientes</span>
+                    </div>
+                    <!-- Posadas -->
+                    <div class="absolute group" style="top: 22%; left: 72%;">
+                        <div class="w-4 h-4 bg-secondary rounded-full animate-ping absolute"></div>
+                        <div class="w-4 h-4 bg-primary rounded-full relative border-2 border-white"></div>
+                        <span class="absolute left-6 top-1/2 -translate-y-1/2 bg-dark text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Posadas</span>
+                    </div>
+                    <!-- Córdoba -->
+                    <div class="absolute group" style="top: 38%; left: 50%;">
+                        <div class="w-4 h-4 bg-secondary rounded-full animate-ping absolute"></div>
+                        <div class="w-4 h-4 bg-primary rounded-full relative border-2 border-white"></div>
+                        <span class="absolute left-6 top-1/2 -translate-y-1/2 bg-dark text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Córdoba</span>
+                    </div>
+                    <!-- Mendoza -->
+                    <div class="absolute group" style="top: 42%; left: 35%;">
+                        <div class="w-4 h-4 bg-secondary rounded-full animate-ping absolute"></div>
+                        <div class="w-4 h-4 bg-primary rounded-full relative border-2 border-white"></div>
+                        <span class="absolute left-6 top-1/2 -translate-y-1/2 bg-dark text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Mendoza</span>
+                    </div>
+                    <!-- Rosario -->
+                    <div class="absolute group" style="top: 42%; left: 60%;">
+                        <div class="w-4 h-4 bg-secondary rounded-full animate-ping absolute"></div>
+                        <div class="w-4 h-4 bg-primary rounded-full relative border-2 border-white"></div>
+                        <span class="absolute left-6 top-1/2 -translate-y-1/2 bg-dark text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Rosario</span>
+                    </div>
+                    <!-- CABA -->
+                    <div class="absolute group" style="top: 45%; left: 65%;">
+                        <div class="w-4 h-4 bg-secondary rounded-full animate-ping absolute"></div>
+                        <div class="w-4 h-4 bg-primary rounded-full relative border-2 border-white"></div>
+                        <span class="absolute left-6 top-1/2 -translate-y-1/2 bg-dark text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">CABA</span>
+                    </div>
+                    <!-- Mar del Plata -->
+                    <div class="absolute group" style="top: 52%; left: 68%;">
+                        <div class="w-4 h-4 bg-secondary rounded-full animate-ping absolute"></div>
+                        <div class="w-4 h-4 bg-primary rounded-full relative border-2 border-white"></div>
+                        <span class="absolute left-6 top-1/2 -translate-y-1/2 bg-dark text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Mar del Plata</span>
+                    </div>
+                    <!-- Bahía Blanca -->
+                    <div class="absolute group" style="top: 54%; left: 58%;">
+                        <div class="w-4 h-4 bg-secondary rounded-full animate-ping absolute"></div>
+                        <div class="w-4 h-4 bg-primary rounded-full relative border-2 border-white"></div>
+                        <span class="absolute left-6 top-1/2 -translate-y-1/2 bg-dark text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Bahía Blanca</span>
+                    </div>
+                    <!-- Neuquén -->
+                    <div class="absolute group" style="top: 58%; left: 38%;">
+                        <div class="w-4 h-4 bg-secondary rounded-full animate-ping absolute"></div>
+                        <div class="w-4 h-4 bg-primary rounded-full relative border-2 border-white"></div>
+                        <span class="absolute left-6 top-1/2 -translate-y-1/2 bg-dark text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Neuquén</span>
+                    </div>
+                    <!-- Comodoro Rivadavia -->
+                    <div class="absolute group" style="top: 75%; left: 35%;">
+                        <div class="w-4 h-4 bg-secondary rounded-full animate-ping absolute"></div>
+                        <div class="w-4 h-4 bg-primary rounded-full relative border-2 border-white"></div>
+                        <span class="absolute left-6 top-1/2 -translate-y-1/2 bg-dark text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Comodoro Rivadavia</span>
                     </div>
                 </div>
-                <!-- Decorative background -->
-                <div class="absolute -top-10 -right-10 w-full h-full bg-secondary/5 rounded-[40px] -z-10 translate-x-4 translate-y-4"></div>
-            </div>
+            </div> 
         </section>
 
         <!-- Values/Mission -->
