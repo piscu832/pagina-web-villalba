@@ -46,54 +46,54 @@
 <body class="bg-[#f8fafc] text-dark">
 
     <!-- Navigation -->
-    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4">
-        <div class="max-w-7xl mx-auto flex items-center justify-between bg-white/70 backdrop-blur-xl border border-white/20 shadow-lg rounded-2xl px-6 h-16">
-            
+    <!-- Navbar clásica plana -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-slate-100 shadow-sm transition-all duration-300">
+        <div class="max-w-screen-2xl mx-auto flex items-center justify-between px-4 lg:px-8 h-[70px]">
+
             <!-- Logo -->
-            <!-- Logo -->
-            <a href="index.html" class="flex items-center gap-4 cursor-pointer group">
-                <!-- Icon Container -->
-                <div class="w-14 h-14 bg-white border border-slate-200 rounded-2xl flex items-center justify-center p-2 transition-transform group-hover:scale-105">
+            <a href="index.html" class="flex items-center gap-3 cursor-pointer group flex-shrink-0 z-10 w-[200px]">
+                <div class="w-10 h-10 flex items-center justify-center">
                     <img src="LOGO AZUL.png" alt="Villalba Logo" class="h-full w-auto">
                 </div>
-                <!-- Text Container -->
-                <div class="flex flex-col leading-none">
-                    <span class="text-2xl font-bold text-[#0F172A] tracking-wider">VILLALBA</span>
-                    <span class="text-[8px] font-bold text-slate-500 uppercase tracking-wider mt-1">IMPLANTES E INSTRUMENTAL QUIRÚRGICO</span>
+                <div class="hidden sm:flex flex-col leading-none">
+                    <span class="text-xl font-bold text-[#0F172A] tracking-wider">VILLALBA</span>
                 </div>
             </a>
 
-            <!-- Desktop Nav -->
-            <nav class="hidden md:flex items-center gap-0.5">
-                <a href="index.html" class="nav-link px-3 py-2 text-[13px] font-bold text-slate-500 hover:text-primary transition-colors rounded-lg">Inicio</a>
-                <a href="novedades.html" class="nav-link px-3 py-2 text-[13px] font-bold text-slate-500 hover:text-primary transition-colors rounded-lg">Novedades</a>
-                <a href="empresa.html" class="nav-link px-3 py-2 text-[13px] font-bold text-slate-500 hover:text-primary transition-colors rounded-lg">Empresa</a>
-                <a href="comunidad.html" class="nav-link px-3 py-2 text-[13px] font-bold text-slate-500 hover:text-primary transition-colors rounded-lg">Comunidad</a>
-                <a href="certificaciones.html" class="nav-link px-3 py-2 text-[13px] font-bold text-slate-500 hover:text-primary transition-colors rounded-lg">Certificaciones</a>
-                <a href="distribuidores.html" class="nav-link px-3 py-2 text-[13px] font-bold text-slate-500 hover:text-primary transition-colors rounded-lg">Distribuidores</a>
-                <a href="catalogo.html" class="nav-link px-3 py-2 text-[13px] font-bold text-slate-500 hover:text-primary transition-colors rounded-lg">Catálogo</a>
-                <div class="w-px h-6 bg-slate-200 mx-2"></div>
-                <a href="trabaja-con-nosotros.html" class="bg-primary text-white px-4 py-2.5 rounded-xl text-[12px] font-black hover:bg-secondary hover:shadow-xl hover:shadow-secondary/20 transition-all active:scale-95">
-                    Trabaja con nosotros
-                </a>
+            <!-- Desktop Nav (centrado) -->
+            <nav class="hidden lg:flex flex-1 justify-center items-center gap-1 xl:gap-2">
+                <a href="index.html" class="px-2 xl:px-4 py-2 text-[11px] xl:text-[12px] font-bold text-slate-700 hover:text-primary tracking-widest uppercase transition-colors">INICIO</a>
+                <a href="novedades.html" class="px-2 xl:px-4 py-2 text-[11px] xl:text-[12px] font-bold text-slate-700 hover:text-primary tracking-widest uppercase transition-colors">NOVEDADES</a>
+                <a href="empresa.html" class="px-2 xl:px-4 py-2 text-[11px] xl:text-[12px] font-bold text-slate-700 hover:text-primary tracking-widest uppercase transition-colors">EMPRESA</a>
+                <a href="comunidad.html" class="px-2 xl:px-4 py-2 text-[11px] xl:text-[12px] font-bold text-slate-700 hover:text-primary tracking-widest uppercase transition-colors">COMUNIDAD</a>
+                <a href="certificaciones.html" class="px-2 xl:px-4 py-2 text-[11px] xl:text-[12px] font-bold text-slate-700 hover:text-primary tracking-widest uppercase transition-colors">CERTIFICACIONES</a>
+                <a href="distribuidores.html" class="px-2 xl:px-4 py-2 text-[11px] xl:text-[12px] font-bold text-slate-700 hover:text-primary tracking-widest uppercase transition-colors">DISTRIBUIDORES</a>
+                <a href="catalogo.html" class="px-2 xl:px-4 py-2 text-[11px] xl:text-[12px] font-bold text-slate-700 hover:text-primary tracking-widest uppercase transition-colors">CATÁLOGO</a>
             </nav>
 
+            <!-- CTA Derecha -->
+            <div class="hidden lg:flex items-center justify-end z-10 w-[200px]">
+                <a href="trabaja-con-nosotros.html" class="border-2 border-primary text-primary px-4 py-1.5 text-[10px] xl:text-[11px] font-black uppercase tracking-widest hover:bg-primary hover:text-white transition-all whitespace-nowrap">
+                    TRABAJÁ CON NOSOTROS
+                </a>
+            </div>
+
             <!-- Mobile Toggle -->
-            <button class="md:hidden text-primary p-2" onclick="toggleMenu()">
+            <button class="lg:hidden text-primary p-2 ml-auto" onclick="toggleMenu()">
                 <i data-lucide="menu" id="menu-icon"></i>
             </button>
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden absolute top-24 left-6 right-6 bg-white/95 backdrop-blur-2xl rounded-3xl shadow-2xl border border-slate-100 p-8 flex-col gap-6 md:hidden animate-fade-up">
-            <a href="index.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Inicio</a>
-            <a href="novedades.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Novedades</a>
-            <a href="empresa.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Empresa</a>
-            <a href="comunidad.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Comunidad</a>
-            <a href="certificaciones.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Certificaciones</a>
-            <a href="distribuidores.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Distribuidores</a>
-            <a href="catalogo.html" class="text-xl font-bold text-slate-800 text-left px-4 py-2 hover:bg-slate-50 rounded-xl transition-colors">Catálogo</a>
-            <a href="trabaja-con-nosotros.html" class="bg-primary text-white py-4 rounded-2xl font-bold text-center mt-4 shadow-lg">Trabaja con nosotros</a>
+        <div id="mobile-menu" class="hidden absolute top-[70px] left-0 right-0 bg-white shadow-2xl border-t border-slate-100 p-6 flex-col gap-4 lg:hidden">
+            <a href="index.html" class="text-sm font-bold text-slate-800 uppercase tracking-widest px-2 py-2 hover:text-primary transition-colors">Inicio</a>
+            <a href="novedades.html" class="text-sm font-bold text-slate-800 uppercase tracking-widest px-2 py-2 hover:text-primary transition-colors">Novedades</a>
+            <a href="empresa.html" class="text-sm font-bold text-slate-800 uppercase tracking-widest px-2 py-2 hover:text-primary transition-colors">Empresa</a>
+            <a href="comunidad.html" class="text-sm font-bold text-slate-800 uppercase tracking-widest px-2 py-2 hover:text-primary transition-colors">Comunidad</a>
+            <a href="certificaciones.html" class="text-sm font-bold text-slate-800 uppercase tracking-widest px-2 py-2 hover:text-primary transition-colors">Certificaciones</a>
+            <a href="distribuidores.html" class="text-sm font-bold text-slate-800 uppercase tracking-widest px-2 py-2 hover:text-primary transition-colors">Distribuidores</a>
+            <a href="catalogo.html" class="text-sm font-bold text-slate-800 uppercase tracking-widest px-2 py-2 hover:text-primary transition-colors">Catálogo</a>
+            <a href="trabaja-con-nosotros.html" class="border-2 border-primary text-primary py-3 font-bold text-center uppercase tracking-widest text-sm mt-2 hover:bg-primary hover:text-white transition-all">Trabajá con nosotros</a>
         </div>
     </header>
 
